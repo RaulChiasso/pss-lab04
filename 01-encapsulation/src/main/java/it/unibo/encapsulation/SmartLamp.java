@@ -11,13 +11,13 @@ public class SmartLamp {
         this.color = color;
     }
     public boolean isStatus() {
-        return status;
+        return this.status;
     }
     public void changeStatus() {
         this.status = !this.status;
     }
     public int getIntensity() {
-        return intensity;
+        return this.intensity;
     }
     public void setIntensity(int intensity) {
         if(intensity != 1 && intensity!=2 && intensity!=3){
@@ -31,7 +31,7 @@ public class SmartLamp {
     }
 
     public String getColor() {
-        return color;
+        return this.color;
     }
     
     public void setColor(String color) {
