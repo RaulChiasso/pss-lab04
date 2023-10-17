@@ -13,22 +13,35 @@ public class SmartLamp {
     public boolean isStatus() {
         return status;
     }
-    public void setStatus(boolean status) {
-        this.status = status;
+    public void changeStatus() {
+        this.status = !this.status;
     }
     public int getIntensity() {
         return intensity;
     }
     public void setIntensity(int intensity) {
-        this.intensity = intensity;
+        if(intensity != 1 || intensity!=2 || intensity!=3){
+            System.out.println("Valore di intensità non valido");
+        }else{
+            if(!this.status){
+                changeStatus();
+            }
+            this.intensity = intensity;
+        }
     }
+
     public String getColor() {
         return color;
     }
+    
     public void setColor(String color) {
-        this.color = color;
+        if(color != "bianco" || color!="rosso" || color!="blu" || color!="verde"){
+            System.out.println("Colore non valido");
+        }else{
+            if(!this.status){
+                changeStatus();
+            }
+            this.color = color;
+        }
     }
-
-    
-    
 }
