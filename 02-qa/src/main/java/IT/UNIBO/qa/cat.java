@@ -15,12 +15,17 @@ public class Cat {
         this.breed = korat;
     }
 
-    // This method is useful because it allows the cat to meow and introduce itself to the world in a single line of code.
+    /*
+        This method is useful because it allows the cat to meow 
+        and introduce itself to the world in a single line of code.
+    */
     public String meow(){
         return "Meow, meow, I am " 
                 + this.name + 
-                ", hear me purr, In this feline world, I'm the star, that's for sure." + 
-                "With whiskers long and fur so sleek, I'm here to share my story, so take a peek!";
+                ", hear me purr, In this feline world," +
+                 " I'm the star, that's for sure." + 
+                "With whiskers long and fur so sleek," + 
+                " I'm here to share my story, so take a peek!";
     }
     
     public void setColor(String c) {
