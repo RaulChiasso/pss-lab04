@@ -1,6 +1,7 @@
 plugins { 
     java 
     application
+    checkstyle
     }
 repositories { mavenCentral() } // Configura Gradle per cercare e scaricare da Maven Central
 dependencies { // Elenco di librerie che ci servono
