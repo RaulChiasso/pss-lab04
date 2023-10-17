@@ -45,10 +45,10 @@ public class TestAllClasses {
         lamp.changeStatus();
         System.out.println(lamp.isOn());
         System.out.println(lamp.getIntensity());
-        lamp.setIntensity(2);
+        System.out.println(lamp.setIntensity(2));
         System.out.println(lamp.getIntensity());
         System.out.println(lamp.getColor());
-        lamp.setColor("verde");
+        System.out.println(lamp.setColor("verde"));
         System.out.println(lamp.getColor());
         lamp.changeStatus();
         System.out.println(lamp.isOn());

@@ -22,28 +22,39 @@ public class SmartLamp {
     public int getIntensity() {
         return this.intensity;
     }
-
-    //Se la lampadina è spenta viene accesa quando si setta l'intensità
-    public void setIntensity(int intensity) {
-        if(intensity == 1 && intensity==2 && intensity==3){
+    /*
+      Se la lampadina è spenta viene accesa quando si setta l'intensità.
+      Torna 0 se il valore dell'intensità non è valido
+      Torna getIntensity() se il valore inserito è valido
+    */
+    public int setIntensity(int intensity) {
+        if(intensity == 1 || intensity==2 || intensity==3){
             if(!this.isOn) {
                 changeStatus();
             }
             this.intensity = intensity;
+            return getIntensity();
         }
+        return 0;
     }
 
     public String getColor() {
         return this.color;
     }
 
-    //Se la lampadina è spenta viene accesa quando si setta il colore
-    public void setColor(String color) {
-        if(color == "bianco" && color=="rosso" && color=="blu" && color=="verde"){
+    /*
+      Se la lampadina è spenta viene accesa quando si setta il colore
+      Torna "Colore inserito non supportato" se il colore non è supportato
+      Torna getColor() se il valore inserito è valido
+    */
+    public String setColor(String color) {
+        if(color == "bianco" || color=="rosso" || color=="blu" || color=="verde"){
             if(!this.isOn){
                 changeStatus();
             }
             this.color = color;
+            return getColor();
         }
+        return "Colore inserito non supportato";
     }
 }
