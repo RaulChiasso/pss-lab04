@@ -65,7 +65,7 @@ public class TestAllClasses {
         System.out.println(lamp.setIntensity(2));
         System.out.println(lamp.getIntensity());
         System.out.println(lamp.getColor());
-        System.out.println(lamp.setColor("verde"));
+        System.out.println(lamp.setColor("green"));
         System.out.println(lamp.getColor());
         lamp.changeStatus();
         System.out.println(lamp.isOn());

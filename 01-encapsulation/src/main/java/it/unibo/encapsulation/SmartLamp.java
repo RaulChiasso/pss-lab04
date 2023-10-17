@@ -23,9 +23,9 @@ public class SmartLamp {
         return this.intensity;
     }
     /*
-      Se la lampadina è spenta viene accesa quando si setta l'intensità.
-      Torna 0 se il valore dell'intensità non è valido
-      Torna getIntensity() se il valore inserito è valido
+      If the SmartLamp is switch off, switch on before change intensity
+      return 0 if value inserted is not valid
+      return getIntensity() if value inserted is valid  
     */
     public int setIntensity(int intensity) {
         if(intensity == 1 || intensity==2 || intensity==3){
@@ -43,18 +43,18 @@ public class SmartLamp {
     }
 
     /*
-      Se la lampadina è spenta viene accesa quando si setta il colore
-      Torna "Colore inserito non supportato" se il colore non è supportato
-      Torna getColor() se il valore inserito è valido
+      If the SmartLamp is switch off, switch on before change color
+      return "Color not supported" if value inserted is not valid
+      return getColor() if value inserted is valid
     */
     public String setColor(String color) {
-        if(color == "bianco" || color=="rosso" || color=="blu" || color=="verde"){
+        if(color == "white" || color=="red" || color=="blue" || color=="green"){
             if(!this.isOn){
                 changeStatus();
             }
             this.color = color;
             return getColor();
         }
-        return "Colore inserito non supportato";
+        return "Color not supported";
     }
 }
