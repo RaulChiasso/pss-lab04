@@ -36,5 +36,18 @@ public class TestAllClasses {
         System.out.println(note3.isHasGPS());
         System.out.println(note3.isHas3G());
         System.out.println(note3.isHasNFC());
+
+        final SmartLamp lamp = new SmartLamp(false, 1, "bianco");
+        System.out.println("----- TEST SMARTLAMP -----");
+        lamp.changeStatus();
+        System.out.println(lamp.isStatus());
+        System.out.println(lamp.getIntensity());
+        lamp.setIntensity(2);
+        System.out.println(lamp.getIntensity());
+        System.out.println(lamp.getColor());
+        lamp.setColor("verde");
+        System.out.println(lamp.getColor());
+        lamp.changeStatus();
+        System.out.println(lamp.isStatus());
     }
 }
