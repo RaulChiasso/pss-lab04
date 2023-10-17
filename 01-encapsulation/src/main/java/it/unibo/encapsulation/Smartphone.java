@@ -42,16 +42,50 @@ public class Smartphone {
         this(brand, model, DEF_SD_SIZE);
     }
 
-    public Smartphone(final String brand, final String model, final int sdSize) {
-        this(DEF_N_CPU, DEF_RAM_SIZE, sdSize, brand, model, DEF_HAS_GPS, DEF_HAS_3G, DEF_HAS_NFC);
+    public Smartphone(
+        final String brand,
+         final String model,
+          final int sdSize
+    ) {
+        this(DEF_N_CPU, 
+        DEF_RAM_SIZE, 
+        sdSize, 
+        brand,
+        model, 
+        DEF_HAS_GPS, 
+        DEF_HAS_3G, 
+        DEF_HAS_NFC);
     }
 
-    public Smartphone(final String brand, final String model, final boolean hasNFC) {
-        this(DEF_N_CPU, DEF_RAM_SIZE, DEF_SD_SIZE, brand, model, DEF_HAS_GPS, DEF_HAS_3G, hasNFC);
+    public Smartphone(
+        final String brand, 
+        final String model, 
+        final boolean hasNFC
+    ) {
+        this(DEF_N_CPU, 
+        DEF_RAM_SIZE, 
+        DEF_SD_SIZE, 
+        brand, 
+        model, 
+        DEF_HAS_GPS,
+        DEF_HAS_3G, 
+        hasNFC);
     }
 
-    public Smartphone(final String brand, final String model, final boolean hasGPS, final boolean has3G) {
-        this(DEF_N_CPU, DEF_RAM_SIZE, DEF_SD_SIZE, brand, model, hasGPS, has3G, DEF_HAS_NFC);
+    public Smartphone(
+        final String brand, 
+        final String model, 
+        final boolean hasGPS, 
+        final boolean has3G
+    ) {
+        this(DEF_N_CPU, 
+        DEF_RAM_SIZE, 
+        DEF_SD_SIZE, 
+        brand, 
+        model, 
+        hasGPS, 
+        has3G, 
+        DEF_HAS_NFC);
     }
 
     public int getCpuCount() {
