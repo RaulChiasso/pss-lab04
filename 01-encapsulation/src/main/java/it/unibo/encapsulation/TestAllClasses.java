@@ -25,5 +25,16 @@ public class TestAllClasses {
         final Smartphone note3 = new Smartphone(4, 2048, 8192, "Samsung", "Galaxy Note 3", true, true, true);
         htcOne.printStringRep();
         note3.printStringRep();
+
+        System.out.println("----- TEST GETTERS SMARTPHONE -----");
+        System.out.println("Getters dell'oggetto note3");
+        System.out.println(note3.getBrand());
+        System.out.println(note3.getModel());
+        System.out.println(note3.getCpuCount());
+        System.out.println(note3.getRam());
+        System.out.println(note3.getSdSize());
+        System.out.println(note3.isHasGPS());
+        System.out.println(note3.isHas3G());
+        System.out.println(note3.isHasNFC());
     }
 }
