@@ -20,7 +20,7 @@ public class SmartLamp {
         return intensity;
     }
     public void setIntensity(int intensity) {
-        if(intensity != 1 || intensity!=2 || intensity!=3){
+        if(intensity != 1 && intensity!=2 && intensity!=3){
             System.out.println("Valore di intensità non valido");
         }else{
             if(!this.status){
@@ -35,7 +35,7 @@ public class SmartLamp {
     }
     
     public void setColor(String color) {
-        if(color != "bianco" || color!="rosso" || color!="blu" || color!="verde"){
+        if(color != "bianco" && color!="rosso" && color!="blu" && color!="verde"){
             System.out.println("Colore non valido");
         }else{
             if(!this.status){
