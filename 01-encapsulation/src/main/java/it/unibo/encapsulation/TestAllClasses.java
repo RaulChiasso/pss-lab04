@@ -43,7 +43,7 @@ public class TestAllClasses {
         final SmartLamp lamp = new SmartLamp(false, 1, "bianco");
         System.out.println("\n" + "----- TEST SMARTLAMP -----" + "\n");
         lamp.changeStatus();
-        System.out.println(lamp.isStatus());
+        System.out.println(lamp.isOn());
         System.out.println(lamp.getIntensity());
         lamp.setIntensity(2);
         System.out.println(lamp.getIntensity());
@@ -51,7 +51,7 @@ public class TestAllClasses {
         lamp.setColor("verde");
         System.out.println(lamp.getColor());
         lamp.changeStatus();
-        System.out.println(lamp.isStatus());
+        System.out.println(lamp.isOn());
         System.out.println("\n" + "-------------------------" + "\n");
     }
 }
