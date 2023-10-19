@@ -44,6 +44,10 @@ public class Cat {
         }
     }
 
+    public int getAge() {
+        return age;
+    }
+
     public String getName() {
         return this.name;
     }
